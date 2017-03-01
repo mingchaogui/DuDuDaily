@@ -1,0 +1,18 @@
+<scroll-view class="container_story" scroll-y="true" style="height:{{winHeight - 64}}rpx;">
+
+  <!-- 标题 -->
+  <view class="title">
+    <text class="title-text">{{title}}</text>
+  </view>
+
+  <!-- 内容 -->
+  <view class="body" wx:for="{{body}}">
+    <image class="body-image" src="{{item[0]}}" mode="aspectFill" wx:if="{{item.length === 3}}" />
+    <view class="body-text" wx:else>{{item}}</view>
+  </view>
+</scroll-view>
+
+<!-- 评论 -->
+<navigator class="comment" url="../comment/comment?id={{id}}" open-type="navigate">
+  <view>{{"评论 " + comments}}</view>
+</navigator>

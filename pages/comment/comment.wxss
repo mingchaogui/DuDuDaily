@@ -1,0 +1,63 @@
+.subTitle {
+  margin-left: 32rpx;
+  line-height: 240%;
+  font-size: 13pt;
+  border-bottom: 1rpx solid #ececec;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  padding: 32rpx;
+  border-bottom: 1rpx solid #ececec;
+}
+
+.comment-line1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.comment-line2 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 84rpx;
+}
+
+.avatar {
+  width: 64rpx;
+  height: 64rpx;
+  display: block;
+  margin-right: 20rpx;
+  border-radius: 50%;
+  background-color: lightslategrey;
+}
+
+.author {
+  flex: 1;
+  color: black;
+  font-size: 13pt;
+  font-weight: bold;
+}
+
+.like-icon {
+  width: 24rpx;
+  height: 24rpx;
+}
+
+.like-text {
+  color: #b7b7b7;
+  font-size: 11pt;
+  margin-left: 8rpx;
+}
+
+.content {
+  color: #353535;
+  font-size: 13pt;
+  line-height: 120%;
+}
+
+.time {
+  color: #b7b7b7;
+  font-size: 11pt;
+  margin-top: 32rpx;
+}

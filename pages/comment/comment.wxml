@@ -1,0 +1,28 @@
+<view>
+  <view class="subTitle">{{longComments.length + "条长评"}}</view>
+  <view class="comment" wx:for="{{longComments}}" wx:key="{{item.id}}">
+    <view class="comment-line1">
+      <image class="avatar" src="{{item.avatar}}" mode="aspectFill" />
+      <view class="author">{{item.author}}</view>
+      <image class="like-icon" mode="aspectFill" src="../image/like.png"></image>
+      <view class="like-text">{{item.likes}}</view>
+    </view>
+    <view class="comment-line2">
+      <view class="content">{{item.content}}</view>
+      <view class="time">{{item.time}}</view>
+    </view>
+  </view>
+  <view class="subTitle">{{shortComments.length + "条短评"}}</view>
+  <view class="comment" wx:for="{{shortComments}}" wx:key="{{item.id}}">
+    <view class="comment-line1">
+      <image class="avatar" src="{{item.avatar}}" mode="aspectFill" />
+      <view class="author">{{item.author}}</view>
+      <image class="like-icon" mode="aspectFill" src="../image/like.png"></image>
+      <view class="like-text">{{item.likes}}</view>
+    </view>
+    <view class="comment-line2">
+      <view class="content">{{item.content}}</view>
+      <view class="time">{{item.time}}</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,19 @@
+
+<!--index.wxml-->
+<view class="container_index">
+  <swiper indicator-dots="true" autoplay="false">
+    <navigator class="topStory-item" wx:for="{{dataList[0].top_stories}}" wx:key="{{item.id}}" url="../story/story?id={{item.id}}" open-type="navigate">
+      <swiper-item>
+        <view class="topStory-title">{{item.title}}</view>
+        <image class="topStory-image" src="{{item.image}}" mode="aspectFill" />
+      </swiper-item>
+    </navigator>
+  </swiper>
+  <block wx:for="{{dataList}}" wx:key="{{item.date}}">
+    <view class="date">{{item.date}}</view>
+    <navigator class="story-item" wx:for="{{item.stories}}" wx:key="{{item.id}}" url="../story/story?id={{item.id}}" open-type="navigate" hover-class="navigator-hover">
+      <view class="story-tag"/>
+      <view class="story-title">{{item.title}}</view>
+    </navigator>
+  </block>
+</view>
