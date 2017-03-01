@@ -1,4 +1,4 @@
-<scroll-view class="container_story" scroll-y="true" style="height:{{winHeight - 64}}rpx;">
+<scroll-view class="container_story" scroll-y="true">
 
   <!-- 标题 -->
   <view class="title">
